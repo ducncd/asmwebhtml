@@ -1,0 +1,114 @@
+:root{
+    --bg1: rgb(220, 108, 248);
+    --bg2: rgb(0, 134, 243);
+    --text: ;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+  }
+a{
+    text-decoration: none;
+}
+
+.container{
+    justify-content:center;
+   
+    width: 100%;
+    
+      
+  
+    /* Phần bg RGB */
+  
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    
+  
+    background-image: linear-gradient(-20deg, #ff2846 0%, #6944ff 100%);
+    display: flex;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    }
+    @-webkit-keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+    }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+    }
+    @-moz-keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+    }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+    }
+    @keyframes Gradient {
+    0% {
+    background-position: 0% 50%
+    }
+    50% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 0% 50%
+    }
+  }
+  
+.tong{
+    width: 400px;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    padding: 50px 30px;
+    margin-top:50px;
+   
+    
+}
+.form-group button{
+    height:35px;
+    width: 100%;
+    margin-top:5px;
+    margin-bottom:5px;
+    background : linear-gradient(120deg,var(--bg1),var(--bg2));
+    border-radius: 10px;
+    border: none;
+    color : white;
+    cursor: pointer;
+    background-size: 200%;
+    transition: 0.5s;
+  }
+  .form-control{
+        width: 100%;
+        height: 35px;
+        border: none;
+        border-bottom: 2px solid pink;
+        cursor: pointer;
+        margin-top: 5px;
+  }
+  
+@media only screen and (max-width: 800px) {
+.tong{
+ width: 70%;
+  
+}
+.container{
+    width: 100%;
+  
+}
+
+  }
+  

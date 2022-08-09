@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XANH STUDIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+   
+</head>
+<body>
+
+    <main class="container">
+        
+        <section class="dautien"> 
+            <nav class="navdau">
+               
+               <li><a  href="#"> <i class="fas fa-envelope"> </i>&nbsp;  Contact For Work : ads.xanhstudio@gmail.com</a></li>
+               <li><a href="mailto:ads.xanhstudio@gmail.com"> <i class="fa fa-users" aria-hidden="true"></i>&nbsp;  Đăng Nhập</a></li>
+               
+            </nav>
+       </section>
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+        
+            <img src="image/logo.png" alt="" class = "logo" width="auto" height="auto">
+        
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Khóa học</a>
+                <a href="#">Đăng kí CTV</a>
+                <a href="lienhe.html">Liên Hệ</a>
+               
+            </nav>
+          
+    <div class="icons">
+        <i class="fa fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+            
+        
+        </header>
+        <!-- header section ends -->
+
+        <!-- login form container  -->
+        
+        <div class="login-form-container">
+        
+            <i class="fas fa-times" id="form-close"></i>
+        
+            <form action="">
+                <h3>login 2002Media</h3>
+                <input type="email" class="box" placeholder="Tên Đăng Nhập">
+                <input type="password" class="box" placeholder="Nhập Mật Khẩu">
+                <input type="submit" value="login now" class="btn" onclick="login()">
+                <input type="checkbox" id="remember">
+                <label for="remember">Lưu</label>
+                <p>Bạn Chưa có tài khoản <a href="#">Đăng Ký Ngay</a></p>
+            </form>
+        
+        </div>
+        
+        <!-- home section starts  -->
+        
+        
+        <section class="lienhe"> 
+            <ul>
+                <li>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4607894653705!2d106.62490081458982!3d10.852514792269929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b161f50ae47%3A0x2328d1d1acc3b11a!2sFPT%20Polytechnic%20-%20T%C3%B2a%20F!5e0!3m2!1svi!2s!4v1659267186195!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                
+                <p>Kích vào button để lấy toạ độ của bạn</p>
+
+<button onclick="getLocation()">Lấy vị trí</button>
+
+<p id="demo"></p>
+            </li>
+
+            </ul>
+           </section>
+       
+           <footer class="footer1">
+            <ul>
+             <li>
+          
+                 <div class="why-reason">
+                     <p class="ff"> TÀI KHOẢN  </p>
+                     <hr>
+                     <h3 style="color: rgb(0, 0, 0); font-weight: bold;"></h3>
+                     <div style="color: rgb(0, 0, 0);"> <a href="#" class="email">Đăng nhập</a> </div>
+                     <div style="color: rgb(0, 0, 0);"> <a href="#" class="email">Đăng ký</a> </div>
+                     
+                   
+                     </p>
+                 </div>
+             </li>
+             <li>
+                 <div class="why-reason">
+                     <p class="ff">LIÊN HỆ</p>
+                     <hr>
+                     <div>Hotline: <a href="tel:085 978 2234" 
+                         class="tel"><b>085 978 2234</b></a></div>
+                    <div class="ae">(Các ngày trong tuần từ <!-- -->8<!-- -->h đến <!-- -->24<!-- -->h)</div>
+                 
+                     <div style="color: rgb(0, 0, 0);">Email hỗ trợ: <a href="mailto:ads.xanhstudio@gmail.com" class="email"><b>ads.xanhstudio@gmail.com</b></a> </div>
+                     
+                 </div>
+             </li>
+            </ul>
+      </footer>
+      
+      <footer class="footer2">
+                  <div style="color: white; text-align: center;"> Copyright © XanhStudio.Vn | Cover by  <a href="https://www.xanhciute.com">XanhiK.Dev</a></div>
+      </footer>
+    </main>
+    <script src="javascript/js.js"></script>
+    <script>
+        var x = document.getElementById("demo");
+        
+        function getLocation() {
+        if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+        x.innerHTML = "Geolocation không được hỗ trợ bởi trình duyệt này.";
+        }
+        }
+        
+        function showPosition(position) {
+        x.innerHTML = "Vĩ độ: " + position.coords.latitude +
+        "<br>Kinh độ: " + position.coords.longitude;
+        }
+        </script>
+</body>
+</html>
